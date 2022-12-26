@@ -1,0 +1,47 @@
+{
+  "name": "@holllo/webextension-storage",
+  "description": "Ergonomic WebExtension storage helper.",
+  "license": "AGPL-3.0-or-later",
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://git.bauke.xyz/Holllo/webextension-storage",
+  "bugs": {
+    "email": "helllo@holllo.org",
+    "url": "https://github.com/Holllo/webextension-storage/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build/"
+  ],
+  "scripts": {
+    "build": "tsx esbuild.ts && tsc",
+    "lint": "xo",
+    "test": "pnpm run build && TEST=true tsx esbuild.ts"
+  },
+  "peerDependencies": {
+    "webextension-polyfill": "^0.10.0"
+  },
+  "devDependencies": {
+    "@bauke/eslint-config": "^0.1.2",
+    "@bauke/prettier-config": "^0.1.2",
+    "@holllo/test": "^0.1.0",
+    "@types/node": "^18.11.17",
+    "@types/webextension-polyfill": "^0.9.2",
+    "esbuild": "^0.16.8",
+    "tsx": "^3.12.1",
+    "typescript": "^4.9.4",
+    "web-ext": "^7.4.0",
+    "webextension-polyfill": "^0.10.0",
+    "xo": "^0.53.1"
+  },
+  "prettier": "@bauke/prettier-config",
+  "xo": {
+    "extends": "@bauke/eslint-config",
+    "prettier": true,
+    "space": true
+  }
+}

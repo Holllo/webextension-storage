@@ -1,0 +1,4 @@
+build/
+firefox/
+node_modules/
+tests/web-ext/*.js

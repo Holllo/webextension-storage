@@ -35,10 +35,10 @@ export async function createValue<T>(
 type Props<T> = Required<ValueOptions<T>>;
 
 export class Value<T> implements Props<T> {
-  public readonly deserialize: Props<T>["deserialize"];
-  public readonly key: Props<T>["key"];
-  public readonly serialize: Props<T>["serialize"];
-  public readonly storage: Props<T>["storage"];
+  public deserialize: Props<T>["deserialize"];
+  public key: Props<T>["key"];
+  public serialize: Props<T>["serialize"];
+  public storage: Props<T>["storage"];
 
   private inner: Props<T>["value"];
 

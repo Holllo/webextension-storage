@@ -2,7 +2,7 @@ import browser from "webextension-polyfill";
 
 export type StorageArea = browser.Storage.StorageArea;
 
-type ValueOptions<T> = {
+export type ValueOptions<T> = {
   /** A function to convert a string to the type `T`. */
   deserialize: (input: string) => T;
   /** The key to use for storage. */

@@ -1,5 +1,4 @@
 import browser from "webextension-polyfill";
-
 import {createValue} from "../build/index.js";
 
 const updatedDate = await createValue<Date>({

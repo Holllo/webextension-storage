@@ -1,6 +1,5 @@
 import {setup, type TestContext} from "@holllo/test";
 import browser from "webextension-polyfill";
-
 import {createValue, type Value} from "../source/index.js";
 
 const create = async <T>(

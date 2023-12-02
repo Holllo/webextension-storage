@@ -1,5 +1,4 @@
 import process from "node:process";
-
 import {build} from "esbuild";
 import {cmd} from "web-ext";
 

@@ -26,17 +26,17 @@
     "webextension-polyfill": "^0.10.0"
   },
   "devDependencies": {
-    "@bauke/eslint-config": "^0.1.2",
-    "@bauke/prettier-config": "^0.1.2",
-    "@holllo/test": "^0.1.0",
-    "@types/node": "^18.11.17",
-    "@types/webextension-polyfill": "^0.9.2",
-    "esbuild": "^0.16.8",
-    "tsx": "^3.12.1",
-    "typescript": "^4.9.4",
-    "web-ext": "^7.4.0",
+    "@bauke/eslint-config": "^0.1.4",
+    "@bauke/prettier-config": "^0.1.4",
+    "@holllo/test": "^0.2.1",
+    "@types/node": "^20.10.2",
+    "@types/webextension-polyfill": "^0.10.7",
+    "esbuild": "^0.19.8",
+    "tsx": "^4.6.2",
+    "typescript": "^5.3.2",
+    "web-ext": "^7.8.0",
     "webextension-polyfill": "^0.10.0",
-    "xo": "^0.53.1"
+    "xo": "^0.56.0"
   },
   "prettier": "@bauke/prettier-config",
   "xo": {

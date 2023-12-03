@@ -33,10 +33,10 @@ const sampleObject: SampleObject = {
   status: "passed",
 };
 
-const group = await setup("Value<T>", async (group) => {
+await setup("Value<T>", async (group) => {
   const samples = [
     ["number", "testNumber", Math.PI],
-    ["string", "testString", "A string to test with!" as string],
+    ["string", "testString", "A string to test with!"],
     ["SampleObject", "testSampleObject", sampleObject],
   ] as const;
 
